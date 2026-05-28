@@ -150,6 +150,12 @@
       "description": "You can use `instanceof Date`, or if cross-realm, use `Object.prototype.toString.call(v) === \"[object Date]\"`",
       "example": "const isDate = v instanceof Date;\n// for cross-realm\nconst isDateCrossRealm = Object.prototype.toString.call(v) === \"[object Date]\""
     },
+    "snippet::is-equal": {
+      "id": "snippet::is-equal",
+      "type": "simple",
+      "description": "You can determine if two values are equal using regular equality checks.",
+      "example": "a === b"
+    },
     "snippet::is-even": {
       "id": "snippet::is-even",
       "type": "simple",
@@ -662,6 +668,16 @@
       "type": "module",
       "moduleName": "last-char",
       "replacements": ["snippet::char-last"]
+    },
+    "lodash.castarray": {
+      "type": "module",
+      "moduleName": "lodash.castarray",
+      "replacements": ["snippet::array-coerce"]
+    },
+    "lodash.eq": {
+      "type": "module",
+      "moduleName": "lodash.eq",
+      "replacements": ["snippet::is-equal"]
     },
     "lodash.isboolean": {
       "type": "module",
