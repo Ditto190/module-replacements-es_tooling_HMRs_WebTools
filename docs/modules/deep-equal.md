@@ -37,3 +37,23 @@ const b = { foo: 'bar' }
 equal(a, b) // true [!code --]
 dequal(a, b) // true [!code ++]
 ```
+
+## `Bun.deepEquals` (native, Bun)
+
+Bun has a built-in [`Bun.deepEquals`](https://bun.com/docs/runtime/utils#bun-deepequals) function. It accepts two values to compare, and an optional `strict` flag (default `false`).
+
+Example:
+
+```ts
+import equal from 'deep-equal' // [!code --]
+
+const a = { foo: 'bar' }
+const b = { foo: 'bar' }
+
+equal(a, b) // true [!code --]
+Bun.deepEquals(a, b) // true [!code ++]
+
+// Strict Mode
+equal(a, b, { strict: true }) // true [!code --]
+Bun.deepEquals(a, b, true) // true [!code ++]
+```
