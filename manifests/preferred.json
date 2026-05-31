@@ -429,7 +429,7 @@
     "glob": {
       "type": "module",
       "moduleName": "glob",
-      "replacements": ["tinyglobby", "fs.glob", "fdir"],
+      "replacements": ["tinyglobby", "fs.promises.glob", "fdir"],
       "url": {"type": "e18e", "id": "glob"}
     },
     "globby": {
@@ -2247,7 +2247,7 @@
     "make-dir": {
       "type": "module",
       "moduleName": "make-dir",
-      "replacements": ["fs.mkdir"],
+      "replacements": ["fs.promises.mkdir"],
       "url": {"type": "e18e", "id": "mkdirp"}
     },
     "materialize-css": {
@@ -2277,7 +2277,7 @@
     "mkdirp": {
       "type": "module",
       "moduleName": "mkdirp",
-      "replacements": ["fs.mkdir"],
+      "replacements": ["fs.promises.mkdir"],
       "url": {"type": "e18e", "id": "mkdirp"}
     },
     "mockdate": {
@@ -2337,7 +2337,7 @@
     "path-exists": {
       "type": "module",
       "moduleName": "path-exists",
-      "replacements": ["fs.access", "fs.existsSync", "Bun.file"],
+      "replacements": ["fs.promises.access", "fs.existsSync", "Bun.file"],
       "url": {"type": "e18e", "id": "path-exists"}
     },
     "pbkdf2": {
@@ -2467,7 +2467,7 @@
     "rimraf": {
       "type": "module",
       "moduleName": "rimraf",
-      "replacements": ["fs.rm", "fs.rmdir", "premove"],
+      "replacements": ["fs.promises.rm", "fs.promises.rmdir", "premove"],
       "url": {"type": "e18e", "id": "rimraf"}
     },
     "safe-compare": {
@@ -2555,13 +2555,13 @@
     "temp": {
       "type": "module",
       "moduleName": "temp",
-      "replacements": ["fs.mkdtemp", "Deno.makeTempDir"],
+      "replacements": ["fs.promises.mkdtemp", "Deno.makeTempDir"],
       "url": {"type": "e18e", "id": "tempy"}
     },
     "tempy": {
       "type": "module",
       "moduleName": "tempy",
-      "replacements": ["fs.mkdtemp", "Deno.makeTempDir"],
+      "replacements": ["fs.promises.mkdtemp", "Deno.makeTempDir"],
       "url": {"type": "e18e", "id": "tempy"}
     },
     "then-request": {
@@ -3047,8 +3047,14 @@
       "nodeFeatureId": {"moduleName": "node:fs"},
       "url": {"type": "node", "id": "api/fs.html"}
     },
-    "fs.access": {
-      "id": "fs.access",
+    "fs.existsSync": {
+      "id": "fs.existsSync",
+      "type": "native",
+      "nodeFeatureId": {"moduleName": "node:fs", "exportName": "existsSync"},
+      "url": {"type": "node", "id": "api/fs.html#fsexistssyncpath"}
+    },
+    "fs.promises.access": {
+      "id": "fs.promises.access",
       "type": "native",
       "nodeFeatureId": {
         "moduleName": "node:fs/promises",
@@ -3056,26 +3062,20 @@
       },
       "url": {"type": "node", "id": "api/fs.html#fspromisesaccesspath-mode"}
     },
-    "fs.existsSync": {
-      "id": "fs.existsSync",
-      "type": "native",
-      "nodeFeatureId": {"moduleName": "node:fs", "exportName": "existsSync"},
-      "url": {"type": "node", "id": "api/fs.html#fsexistssyncpath"}
-    },
-    "fs.glob": {
-      "id": "fs.glob",
+    "fs.promises.glob": {
+      "id": "fs.promises.glob",
       "type": "native",
       "nodeFeatureId": {"moduleName": "node:fs", "exportName": "glob"},
       "url": {"type": "node", "id": "api/fs.html#fspromisesglobpattern-options"}
     },
-    "fs.mkdir": {
-      "id": "fs.mkdir",
+    "fs.promises.mkdir": {
+      "id": "fs.promises.mkdir",
       "type": "native",
       "nodeFeatureId": {"moduleName": "node:fs", "exportName": "mkdir"},
       "url": {"type": "node", "id": "api/fs.html#fspromisesmkdirpath-options"}
     },
-    "fs.mkdtemp": {
-      "id": "fs.mkdtemp",
+    "fs.promises.mkdtemp": {
+      "id": "fs.promises.mkdtemp",
       "type": "native",
       "nodeFeatureId": {
         "moduleName": "node:fs/promises",
@@ -3086,14 +3086,14 @@
         "id": "api/fs.html#fspromisesmkdtempprefix-options"
       }
     },
-    "fs.rm": {
-      "id": "fs.rm",
+    "fs.promises.rm": {
+      "id": "fs.promises.rm",
       "type": "native",
       "nodeFeatureId": {"moduleName": "node:fs/promises", "exportName": "rm"},
       "url": {"type": "node", "id": "api/fs.html#fspromisesrmpath-options"}
     },
-    "fs.rmdir": {
-      "id": "fs.rmdir",
+    "fs.promises.rmdir": {
+      "id": "fs.promises.rmdir",
       "type": "native",
       "nodeFeatureId": {
         "moduleName": "node:fs/promises",
