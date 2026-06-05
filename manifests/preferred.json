@@ -3221,7 +3221,8 @@
     "node:fs": {
       "id": "node:fs",
       "type": "documented",
-      "replacementModule": "node:fs"
+      "replacementModule": "node:fs",
+      "url": {"type": "node", "id": "api/fs.html"}
     },
     "node:sqlite": {
       "id": "node:sqlite",
