@@ -567,6 +567,12 @@
       },
       "nodeFeatureId": {"moduleName": "buffer"}
     },
+    "DOMException": {
+      "id": "DOMException",
+      "type": "native",
+      "url": {"type": "mdn", "id": "Web/API/DOMException"},
+      "webFeatureId": {"featureId": "dom", "compatKey": "api.DOMException"}
+    },
     "DataView": {
       "id": "DataView",
       "type": "native",
@@ -2577,6 +2583,11 @@
       "type": "module",
       "moduleName": "native-promise-only",
       "replacements": ["Promise"]
+    },
+    "node-domexception": {
+      "type": "module",
+      "moduleName": "node-domexception",
+      "replacements": ["DOMException"]
     },
     "node-environment-flags": {
       "type": "module",
