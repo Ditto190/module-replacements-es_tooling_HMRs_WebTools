@@ -2182,6 +2182,11 @@
       "moduleName": "atob-lite",
       "replacements": ["atob"]
     },
+    "big-integer": {
+      "type": "module",
+      "moduleName": "big-integer",
+      "replacements": ["BigInt"]
+    },
     "btoa": {"type": "module", "moduleName": "btoa", "replacements": ["btoa"]},
     "buffer-alloc": {
       "type": "module",
