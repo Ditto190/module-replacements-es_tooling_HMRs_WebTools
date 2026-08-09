@@ -3038,6 +3038,11 @@
       "moduleName": "pinkie-promise",
       "replacements": ["Promise"]
     },
+    "promise": {
+      "type": "module",
+      "moduleName": "promise",
+      "replacements": ["Promise"]
+    },
     "promise-polyfill": {
       "type": "module",
       "moduleName": "promise-polyfill",
