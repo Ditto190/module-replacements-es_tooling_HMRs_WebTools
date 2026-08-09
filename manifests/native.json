@@ -2222,6 +2222,11 @@
       "moduleName": "arraybuffer.slice",
       "replacements": ["ArrayBuffer.prototype.slice"]
     },
+    "asap": {
+      "type": "module",
+      "moduleName": "asap",
+      "replacements": ["queueMicrotask"]
+    },
     "asynciterator.prototype": {
       "type": "module",
       "moduleName": "asynciterator.prototype",
