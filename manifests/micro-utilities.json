@@ -378,6 +378,12 @@
       "description": "You can create a copy of a regular expression using the `RegExp` constructor.",
       "example": "const copyRegExp = (regexp) => new RegExp(regexp);"
     },
+    "snippet::set-function-length": {
+      "id": "snippet::set-function-length",
+      "type": "simple",
+      "description": "You can set `length` of a function using `Object.defineProperty`.",
+      "example": "const setFunctionLength = (fn, length) => Object.defineProperty(fn, 'length', { value: length, configurable: true });"
+    },
     "snippet::set-tostringtag": {
       "id": "snippet::set-tostringtag",
       "type": "simple",
@@ -883,6 +889,11 @@
       "type": "module",
       "moduleName": "repeat-element",
       "replacements": ["snippet::array-filled-with"]
+    },
+    "set-function-length": {
+      "type": "module",
+      "moduleName": "set-function-length",
+      "replacements": ["snippet::set-function-length"]
     },
     "shebang-regex": {
       "type": "module",
