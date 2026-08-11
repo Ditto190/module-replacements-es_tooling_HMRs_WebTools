@@ -2792,6 +2792,12 @@
       "replacements": ["@xmldom/xmldom"],
       "url": {"type": "e18e", "id": "xmldom"}
     },
+    "yaml-ast-parser": {
+      "type": "module",
+      "moduleName": "yaml-ast-parser",
+      "replacements": ["yaml"],
+      "url": {"type": "e18e", "id": "yaml-ast-parser"}
+    },
     "yamljs": {
       "type": "module",
       "moduleName": "yamljs",
