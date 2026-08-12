@@ -2821,6 +2821,12 @@
       "moduleName": "yargs-parser",
       "replacements": ["util.parseArgs", "mri"],
       "url": {"type": "e18e", "id": "parseargs"}
+    },
+    "yup": {
+      "type": "module",
+      "moduleName": "yup",
+      "replacements": ["valibot", "zod/mini"],
+      "url": {"type": "e18e", "id": "schema-validation"}
     }
   },
   "replacements": {
@@ -3693,6 +3699,11 @@
       "nodeFeatureId": {"moduleName": "node:util", "exportName": "types"},
       "url": {"type": "node", "id": "api/util.html#utiltypes"}
     },
+    "valibot": {
+      "id": "valibot",
+      "type": "documented",
+      "replacementModule": "valibot"
+    },
     "vitest": {
       "id": "vitest",
       "type": "documented",
@@ -3719,6 +3730,11 @@
       "type": "native",
       "nodeFeatureId": {"moduleName": "node:zlib", "exportName": "gzipSync"},
       "url": {"type": "node", "id": "api/zlib.html#zlibgzipsyncbuffer-options"}
+    },
+    "zod/mini": {
+      "id": "zod/mini",
+      "type": "documented",
+      "replacementModule": "zod"
     }
   }
 }
