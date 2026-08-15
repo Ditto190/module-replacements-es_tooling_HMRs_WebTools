@@ -150,6 +150,12 @@
       "replacements": ["tinyclip", "ClipboardAPI"],
       "url": {"type": "e18e", "id": "clipboardy"}
     },
+    "coa": {
+      "type": "module",
+      "moduleName": "coa",
+      "replacements": ["sade", "cleye", "cac"],
+      "url": {"type": "e18e", "id": "cli-builders"}
+    },
     "colors": {
       "type": "module",
       "moduleName": "colors",
@@ -3070,6 +3076,7 @@
       "type": "native",
       "url": "https://bun.com/docs/test"
     },
+    "cac": {"id": "cac", "type": "documented", "replacementModule": "cac"},
     "cleye": {
       "id": "cleye",
       "type": "documented",
