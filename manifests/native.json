@@ -1713,6 +1713,15 @@
       },
       "nodeFeatureId": {"moduleName": "crypto", "exportName": "randomFill"}
     },
+    "crypto.subtle": {
+      "id": "crypto.subtle",
+      "type": "native",
+      "url": {"type": "mdn", "id": "Web/API/SubtleCrypto"},
+      "webFeatureId": {
+        "featureId": "web-cryptography",
+        "compatKey": "api.SubtleCrypto"
+      }
+    },
     "es-errors": {
       "id": "es-errors",
       "type": "removal",
@@ -3421,6 +3430,12 @@
       "type": "module",
       "moduleName": "trim",
       "replacements": ["String.prototype.trim"]
+    },
+    "tweetnacl": {
+      "type": "module",
+      "moduleName": "tweetnacl",
+      "replacements": ["crypto.subtle"],
+      "url": {"type": "e18e", "id": "tweetnacl"}
     },
     "typed-array-buffer": {
       "type": "module",
