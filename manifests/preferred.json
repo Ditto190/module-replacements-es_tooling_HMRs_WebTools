@@ -2798,6 +2798,12 @@
       "replacements": ["crypto.randomUUID"],
       "url": {"type": "e18e", "id": "uuidv4"}
     },
+    "vue3-markdown-it": {
+      "type": "module",
+      "moduleName": "vue3-markdown-it",
+      "replacements": ["vue-markdown-render"],
+      "url": {"type": "e18e", "id": "vue3-markdown-it"}
+    },
     "wellknown": {
       "type": "module",
       "moduleName": "wellknown",
@@ -3749,6 +3755,11 @@
       "id": "vitest",
       "type": "documented",
       "replacementModule": "vitest"
+    },
+    "vue-markdown-render": {
+      "id": "vue-markdown-render",
+      "type": "documented",
+      "replacementModule": "vue-markdown-render"
     },
     "webpack-bundle-analyzer": {
       "id": "webpack-bundle-analyzer",
