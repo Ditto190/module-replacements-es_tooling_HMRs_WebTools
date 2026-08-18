@@ -1615,6 +1615,18 @@
         "compatKey": "javascript.builtins.Symbol.description"
       }
     },
+    "Temporal": {
+      "id": "Temporal",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Temporal"
+      },
+      "webFeatureId": {
+        "featureId": "temporal",
+        "compatKey": "javascript.builtins.Temporal"
+      }
+    },
     "TextDecoder": {
       "id": "TextDecoder",
       "type": "native",
@@ -3415,6 +3427,12 @@
       "type": "module",
       "moduleName": "time-stamp",
       "replacements": ["Intl.DateTimeFormat"]
+    },
+    "timezone-support": {
+      "type": "module",
+      "moduleName": "timezone-support",
+      "replacements": ["Temporal"],
+      "url": {"type": "e18e", "id": "timezone-support"}
     },
     "to-buffer": {
       "type": "module",
