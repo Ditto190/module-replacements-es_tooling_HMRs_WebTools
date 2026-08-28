@@ -3249,6 +3249,11 @@
       "moduleName": "path-parse",
       "replacements": ["path.parse"]
     },
+    "pify": {
+      "type": "module",
+      "moduleName": "pify",
+      "replacements": ["util.promisify"]
+    },
     "pinkie-promise": {
       "type": "module",
       "moduleName": "pinkie-promise",
