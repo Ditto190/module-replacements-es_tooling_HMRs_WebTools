@@ -1826,6 +1826,12 @@
       "url": {"type": "node", "id": "api/fs.html#promises-api"},
       "nodeFeatureId": {"moduleName": "fs"}
     },
+    "fs.promises.mkdir": {
+      "id": "fs.promises.mkdir",
+      "type": "native",
+      "nodeFeatureId": {"moduleName": "node:fs", "exportName": "mkdir"},
+      "url": {"type": "node", "id": "api/fs.html#fspromisesmkdirpath-options"}
+    },
     "fs.promises.rm": {
       "id": "fs.promises.rm",
       "type": "native",
@@ -3038,6 +3044,12 @@
       "moduleName": "long",
       "replacements": ["BigInt"]
     },
+    "make-dir": {
+      "type": "module",
+      "moduleName": "make-dir",
+      "replacements": ["fs.promises.mkdir"],
+      "url": {"type": "e18e", "id": "mkdirp"}
+    },
     "math-intrinsics": {
       "type": "module",
       "moduleName": "math-intrinsics",
@@ -3108,6 +3120,18 @@
       "moduleName": "micromatch",
       "replacements": ["path.matchesGlob", "picomatch", "zeptomatch"],
       "url": {"type": "e18e", "id": "micromatch"}
+    },
+    "mkdirp": {
+      "type": "module",
+      "moduleName": "mkdirp",
+      "replacements": ["fs.promises.mkdir"],
+      "url": {"type": "e18e", "id": "mkdirp"}
+    },
+    "mkdirp-classic": {
+      "type": "module",
+      "moduleName": "mkdirp-classic",
+      "replacements": ["fs.promises.mkdir"],
+      "url": {"type": "e18e", "id": "mkdirp"}
     },
     "native-promise-only": {
       "type": "module",
