@@ -369,7 +369,7 @@
     "snippet::is-whitespace": {
       "id": "snippet::is-whitespace",
       "type": "simple",
-      "description": "You can check if a string contains only whitespace with RegExp or by trimming it and comparing it to an empty string.",
+      "description": "You can check if a string contains only whitespace with `RegExp` or by trimming it and comparing it to an empty string.",
       "example": "const isWhitespace = (str) => /^\\s*$/.test(str);"
     },
     "snippet::is-windows": {
@@ -377,6 +377,12 @@
       "type": "simple",
       "description": "You can check if the current environment is Windows by checking if `process.platform` is equal to \"win32\".",
       "example": "const isWindows = () => process.platform === \"win32\";"
+    },
+    "snippet::is-word-character": {
+      "id": "snippet::is-word-character",
+      "type": "simple",
+      "description": "You can check if a character is a word character with a `RegExp`.",
+      "example": "const isWordChar = (c) => /\\w/.test(c);"
     },
     "snippet::is-wsl": {
       "id": "snippet::is-wsl",
@@ -873,10 +879,20 @@
       "moduleName": "is-whitespace",
       "replacements": ["snippet::is-whitespace"]
     },
+    "is-whitespace-character": {
+      "type": "module",
+      "moduleName": "is-whitespace-character",
+      "replacements": ["snippet::is-whitespace"]
+    },
     "is-windows": {
       "type": "module",
       "moduleName": "is-windows",
       "replacements": ["snippet::is-windows"]
+    },
+    "is-word-character": {
+      "type": "module",
+      "moduleName": "is-word-character",
+      "replacements": ["snippet::is-word-character"]
     },
     "is-wsl": {
       "type": "module",
