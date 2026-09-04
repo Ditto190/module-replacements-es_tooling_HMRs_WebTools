@@ -990,6 +990,11 @@
       "moduleName": "last-char",
       "replacements": ["snippet::char-last"]
     },
+    "libbase64": {
+      "type": "module",
+      "moduleName": "libbase64",
+      "replacements": ["snippet::base64"]
+    },
     "load-json-file": {
       "type": "module",
       "moduleName": "load-json-file",
